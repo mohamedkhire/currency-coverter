@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Primary Meta Tags -->
+    <title>Global Currency Converter - Convert All Currencies Instantly</title>
+    <meta name="title" content="Global Currency Converter - Convert All Currencies Instantly" />
+    <meta name="description" content="Global Currency Converter - Convert All Currencies Instantly" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Global Currency Converter - Convert All Currencies Instantly" />
+    <meta property="og:description" content="Global Currency Converter - Convert All Currencies Instantly" />
+    <meta property="og:image" content="https://i.ibb.co/JRv72hT/currency-exchange.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Global Currency Converter - Convert All Currencies Instantly" />
+    <meta property="twitter:description" content="Global Currency Converter - Convert All Currencies Instantly" />
+    <meta property="twitter:image" content="https://i.ibb.co/JRv72hT/currency-exchange.png" />
+    <link href="/assets/mind-icon.png" rel="icon" />
+    <link href="/assets/mind-icon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="app-title">Currency Converter</h1>
+        <div class="converter">
+            <input type="number" id="amount" class="amount-input" value="1" />
+            <select id="from-currency-select" class="currency-select"></select>
+            <span class="exchange-icon" id="exchange-icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+            <select id="to-currency-select" class="currency-select-to"></select>
+            <button id="convert-button" class="convert-button">Convert</button>
+        </div>
+        <div class="pulse-loader"></div>
+        <p id="result" class="result"></p>
+        <footer class="footer">&copy; 2023 Currency Converter by <a target="_blank"
+                href="https://mohamedkhire.vercel.app/" style="text-decoration: none; color: #ffffff;">Mohamed Khire</a>
+        </footer>
+    </div>
+    <script src="currency-codes.js"></script>
+    <script src="api-key.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
